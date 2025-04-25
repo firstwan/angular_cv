@@ -36,7 +36,7 @@ jobs:
 
     - name: Build
       id: build
-      run: ng build --output-path=dist --base-href=/portfolio/
+      run: npm run build:prod
       
     - name: Upload dist folder to page artifact
       id: deployment

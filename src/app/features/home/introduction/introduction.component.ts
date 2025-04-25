@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { TypewriterDirective } from '../../../shared/typewriter.directive'
 import { NgIcon } from '@ng-icons/core';
 import { heroArrowDownTraySolid } from '@ng-icons/heroicons/solid';
+import { simpleGmail } from '@ng-icons/simple-icons'
 
 @Component({
   selector: 'home-introduction',
@@ -15,4 +16,5 @@ export class IntroductionComponent{
   resumePath = 'files/SoftwareEngineer_WanSiewYik.pdf';
 
   downloadIcon = heroArrowDownTraySolid
+  emailIcon = simpleGmail
 }

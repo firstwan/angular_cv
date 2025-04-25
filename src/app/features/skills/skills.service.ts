@@ -5,7 +5,8 @@ import {
     simpleNextdotjs, simpleTypescript,
     simpleJavascript, simplePostgresql, simpleMysql,
     simpleMongodb, simpleDocker, simpleKubernetes,
-    simpleAmazonwebservices, simpleGithub, simpleJenkins
+    simpleAmazonwebservices, simpleGithub, simpleJenkins,
+    simpleBootstrap, simpleTailwindcss
 } from '@ng-icons/simple-icons';
 import { diAzurePlain, diCsharpPlain, diMicrosoftsqlserverPlain } from '@ng-icons/devicon/plain'
 
@@ -67,6 +68,16 @@ export class SkillsService {
         {
             name: "Nuxt.js",
             iconName: simpleNextdotjs,
+            type: TechCategory.FrontendFramework,
+        },
+        {
+            name: "Bootstrap",
+            iconName: simpleBootstrap,
+            type: TechCategory.FrontendFramework,
+        },
+        {
+            name: "Tailwind CSS",
+            iconName: simpleTailwindcss,
             type: TechCategory.FrontendFramework,
         },
         {

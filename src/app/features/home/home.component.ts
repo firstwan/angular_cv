@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IntroductionComponent } from './introduction/introduction.component'
-import { SkillsComponent } from './skills/skills.component'
+import { SkillsComponent } from '../skills/skills.component'
 import { EmploymentsComponent } from '../employments/employments.component'
 import { CertificatesComponent } from '../certificates/certificates.component';
 

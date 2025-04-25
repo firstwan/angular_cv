@@ -1,0 +1,7 @@
+<div class="timeline">
+  @for (item of employmentData; track item.id) {
+    <div [class]="{'container': true, 'left': item.id % 2 != 0, 'right': item.id % 2 == 0}">
+      <employment-card class="content" [employmentData]="item"></employment-card>
+    </div>
+  }
+</div>

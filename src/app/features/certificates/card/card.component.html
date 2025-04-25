@@ -1,0 +1,7 @@
+<a href="https://www.credly.com/badges/76c80e50-e9e8-4704-9501-5bf3fbc4ba94/linked_in_profile" target="_blank">
+    <div class="w-[20vw] h-[15vh] bg-white p-4 rounded-lg shadow grid grid-cols-[10vh_1fr] gap-x-4 cursor-pointer">
+        <img [src]="certificateData.logoUrl" [alt]="certificateData.name" class="w-full aspect-square row-span-2">
+        <div class="content-end">{{ certificateData.name }}</div>
+        <em class="text-sm">Expired on: {{ getExpireDate() }}</em>
+    </div>
+</a>

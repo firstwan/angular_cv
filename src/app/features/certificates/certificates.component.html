@@ -1,0 +1,8 @@
+<div class="bg-gray-100 py-6 px-6">
+    <h2 class="text-2xl font-bold mb-6">Certificates</h2>
+    <div class="flex flex-col">
+        @for (item of certificates; track $index) {
+            <certificate-card [certificateData]="item"></certificate-card>
+        }
+    </div>
+</div>

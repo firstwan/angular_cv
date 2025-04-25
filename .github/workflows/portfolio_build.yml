@@ -10,10 +10,9 @@ on:
     branches: [ "main" ]
 
 jobs:
-  angular:
+  angular-build:
     name: Angular Build
     runs-on: ubuntu-latest
-
     strategy:
       matrix:
         node-version: [22]
@@ -30,9 +29,32 @@ jobs:
         cache-dependency-path: package-lock.json
         
     - name: Perform clean install dependencies
+      id: dependencies
       run: npm ci
       
     # - run: npm test
 
     - name: Build
+      id: build
       run: npm run build
+      
+    - name: Upload dist folder to page artifact
+      id: deployment
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: ./dist/portfolio
+        
+  angular-deploy:
+    name: Angular deploy
+    needs: [angular-build]
+    runs-on: ubuntu-latest
+    # Deploy to the github-pages environment
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+        
+    

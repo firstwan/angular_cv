@@ -3,11 +3,12 @@
 
 name: Portfolio GitHub Page CI
 
-on:
+on: 
   push:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
+  workflow_dispatch:
 
 jobs:
   angular-build:

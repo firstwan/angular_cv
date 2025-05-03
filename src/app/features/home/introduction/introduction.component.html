@@ -1,6 +1,10 @@
 <section class="text-center py-20">
-    <h1 class="text-4xl font-bold mb-4">Hi, I'm {{ name }}</h1>
-        <p class="text-3xl text-gray-600 mb-4 h-[30px]" [typewriter]="titles" [isLoop]="true"></p>
+    <h1 class="text-4xl font-bold ">Hi, I'm {{ name }}</h1>
+        <div class="h-[30px] my-4">
+            @defer (on immediate) {
+                <p class="text-3xl text-gray-600" [typewriter]="titles" [isLoop]="true"></p>
+            }
+    </div>
     <p class="w-[40%] m-auto mb-6">I'm a software engineer with experience developing scalable web applications, designing RESTful API services, and architecting robust database schemas. I prioritize writing clean, maintainable code and continuously refine my skills across modern development tools and frameworks.</p>
     <div class="flex gap-4 justify-center">
         <a href="https://github.com/firstwan" target="_blank"><img class="icon-size" alt="github" title="GitHub" src="icons/github.svg" /></a>

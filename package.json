@@ -21,6 +21,7 @@
     "@angular/platform-server": "^19.2.0",
     "@angular/router": "^19.2.0",
     "@angular/ssr": "^19.2.8",
+    "@netlify/angular-runtime": "^2.3.1",
     "@ng-icons/core": "^31.3.0",
     "@ng-icons/devicon": "^31.3.0",
     "@ng-icons/heroicons": "^31.3.0",

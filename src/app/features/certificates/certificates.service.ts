@@ -14,7 +14,7 @@ export class CertificatesService {
         {
             name: "CompTIA Security+",
             expiredOn: new Date("2026-10-22"),
-            logoUrl: 'images/CompTIA%20Security.png',
+            logoUrl: 'images/comptia_security.png',
         }
     ];
 
